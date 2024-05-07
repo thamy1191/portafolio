@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="cont-form">
+        <div class="info-form">
+            <p id="parra">Registrate</p>
+            <p id="texto">Gracias por incribirte a nuestro portafolio de imagenes,</p>
+            <p id="texto2">¡se parte y comparte tus momentos de alegria con nosotros ! 
+            </p>
+            
+        </div>
+        <div id="espacios">
+            <div>
+                    <input type="name" name="name" id="pa" placeholder="Ingresa tu nombre" required class="campo">
+                    <input type="email" name="email" id="pal" placeholder="Ingresa tu correo" required class="campo"><br>
+                    <input type="tel" name="telefono" placeholder="Ingresa tu telefono" required class="campo" id="ingre"><br>
+                    <input type="direccion" name="direccion" id="dic" placeholder="direccion" required class="campo"><br>
+                    <button id="enviar" class="btn-enviar" onclick= "mostraralerta()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="for.js"></script>
+
+</body>
+</html>
