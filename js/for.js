@@ -12,7 +12,7 @@ enviar.addEventListener("click", (e) =>{
      ingre:ingre.value,
      dic:dic.value,
      }
-
+    //crear una diferente lista de correo contraseñas y guardar localstorege //
     localStorage.setItem("pa",pa.value)
     localStorage.setItem("pal",pal.value)
     localStorage.setItem("ingre",ingre.value)
@@ -31,3 +31,5 @@ function mostraralerta(){
           swal(window.location.href= "http://127.0.0.1:5500/inde.html"), {
            
 }}})}
+
+

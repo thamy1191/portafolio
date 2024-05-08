@@ -1,0 +1,37 @@
+body{
+    background-image: url(../img/8nta33mt.png);
+    background-size: cover;
+}
+.carousel {
+    width: 500px;
+    margin: 0 auto;
+    
+  }
+  
+  .slides {
+    width: 800px;
+    height: 100px;
+    margin-left: -25%;
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none
+    
+    ;
+    
+    
+  }
+  
+  .slides li {
+    width: 500%;
+    height: 200%;
+    margin: 0 0px;
+    border: 1px ;
+    transition: all 0.5s ease;
+    
+  }
+  
+  .slides li:hover {
+    transform: scale(1.9);
+    
+  }
