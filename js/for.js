@@ -1,35 +1,43 @@
 const pa= document.getElementById("pa")
 const pal= document.getElementById( "pal")
 const ingre= document.getElementById("ingre")
-const dic= document.getElementById("dic")
-const enviar= document.getElementById("enviar")
+const password= document.getElementById("password")
+const button= document.getElementById("button")
+let lista=[]
 
-enviar.addEventListener("click", (e) =>{
-    e.preventDefault()
-    const data ={
-     pa:pa.value,
+
+button.addEventListener("click", (e) =>{
+  if(pa.value  !="" && pal.value  !=""  && ingre.value !="" && password.value  !=""){
+
+     e.preventDefault()
+
+     const data = {
+     pa: pa.value,
      pal:pal.value,
      ingre:ingre.value,
-     dic:dic.value,
+     password:password.value,
      }
-    //crear una diferente lista de correo contraseñas y guardar localstorege //
-    localStorage.setItem("pa",pa.value)
-    localStorage.setItem("pal",pal.value)
-    localStorage.setItem("ingre",ingre.value)
-    localStorage.setItem("dic",dic.value)
-    localStorage.setItem("enviar",enviar.value)
+    lista = JSON.parse( localStorage.getItem("lista")) || []
+
+    lista.push(data)
+
+    localStorage.setItem("lista",JSON.stringify(lista))
     
-
-    console.log(data)
-})
-function mostraralerta(){
     swal({
-        icon: "success",
-      })
-      .then((willDelete) => {
-        if (willDelete) {
-          swal(window.location.href= "http://127.0.0.1:5500/inde.html"), {
-           
-}}})}
+      title: "bienvenido!",
+      text: "You clicked the button!",
+      icon: "success",
+      button: "Aww yiss!",
+    });
+  
 
+    }else{
+      alert("Datos no resgistrados")
+      return false;
+    }
+
+     
+ })  
+
+    
 

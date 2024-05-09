@@ -58,7 +58,7 @@
     margin-bottom: 15px;
     
   }
-form button{
+.btnenviar{
     color: #fff;
     border: none;
     background: linear-gradient( #238bcb , #021245);
