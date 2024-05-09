@@ -4,14 +4,27 @@ const button= document.getElementById("button")
 
 button.addEventListener("click", (e) =>{
     e.preventDefault()
-    const data ={
-     username: username.value,
-     password: password.value
-    }
-    localStorage.setItem("username",username.value)
-    localStorage.setItem("password",password.value)
-    localStorage.setItem("button",button.value)
-
     
-    console.log(data)
-})
+    usuarios= JSON.parse( localStorage.getItem("lista")) || []
+    
+    valores = usuarios.find(usu => usu.pal == username.value && usu.password == password.value)
+
+ console.log(valores)
+
+    if (valores) {
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+
+          window.location.href = "pag.html"
+    
+
+       
+    }})
+
+ 
+
