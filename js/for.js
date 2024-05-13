@@ -28,15 +28,18 @@ button.addEventListener("click", (e) =>{
       text: "You clicked the button!",
       icon: "success",
       button: "Aww yiss!",
+    
+
+      
     });
-  
+    
 
     }else{
       alert("Datos no resgistrados")
       return false;
     }
-
-     
+    
+     window.location.href="inde.html"
  })  
 
     

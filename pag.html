@@ -5,10 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolio</title>
     <link rel="stylesheet" href="css/pagImg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
-    
-    <div class="carousel">
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>  
+        <div class="logo">
+          <h1>menu</h1>
+        </div>
+        <div class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">blogs</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">contact</a></li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header id="header">
+    <nav class="Imagen">
+        <img src="img/piro.jpg" alt="Galeria" id="icon" width="200px">
+        <a href="formulario.html" id="registro">Registrate</a>
+        <a href="inde.html" id="login">Inicia Sesion</a>
+        <form>
+            <input type="file" id="imageUploader" accept="image/*" id="cargar">
+            <input type="text" id="tituloImagen">
+            <button type="button" id="subir">Subir Imagen</button>
+        </form>
+        <button id="logout">Cerrar Sesión</button>
+    </nav>
+</header>
+<main>
+    <h1 class="gale" id="titulo">Galeria de Imagenes</h1>
+    <div class="cards" id="galeria">
+        <p id="titulos"></p>
+      
+    </div>
+</main>
+
+  
+
+  <div class="carousel">
         <ul class="slides">
           <li><img src="img/ho.jpg" alt="Imagen 1" width="100%"></li>
           <li><img src="img/hawa.jpg" alt="Imagen 2" width="100%"></li>
@@ -18,6 +63,58 @@
         </ul>
       </div>
 
+      
+         
+     
+      
   
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://es-la.facebook.com/?home"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://twitter.com/"></i><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+ 
+      
+   </footer>
+ 
+ <script src="js/pagi.js"></script>
 </body>
 </html>
